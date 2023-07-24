@@ -99,33 +99,51 @@
     }
   },
   "synonyms": {
-    "oneWay": [
-      {
-        "phrase": "location",
-        "synonyms": [
-          "restaurant"
-        ]
-      },
-      {
-        "phrase": "food joint",
-        "synonyms": [
-          "restaurant"
-        ]
-      }
+    "oneWay": [],
+    "synonymSet": [
+      [
+        "restaurant",
+        "location"
+      ]
     ],
-    "synonymSet": [],
     "normalization": []
   },
   "localizations": {},
+  "rules": [
+    {
+      "criteria": {
+        "searchTermContains": [
+          "turtlehead"
+        ]
+      },
+      "actions": [
+        {
+          "actionType": "BOOST_VERTICALS",
+          "verticals": [
+            "faqs"
+          ]
+        }
+      ],
+      "name": "Boost FAQs for Turtlehead Search Term"
+    }
+  ],
   "additionalSearchablePlaces": [],
   "querySuggestions": {
     "disablePopularQueries": false,
     "verticalPromptsOnEmpty": false,
     "popularQueriesBlacklistedTerms": [],
     "popularQueriesBlacklistedRegex": [],
-    "universalPrompts": [],
+    "universalPrompts": [
+      "Restaurants near me",
+      "Do you offer delivery?",
+      "Events",
+      "Do you sell gift cards?"
+    ],
     "verticalPrompts": {
       "events": [
+        "[[name]]"
+      ],
+      "faqs": [
         "[[name]]"
       ],
       "restaurants": [
