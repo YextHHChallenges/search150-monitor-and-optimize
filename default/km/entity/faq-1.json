@@ -3,8 +3,37 @@
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "primaryLocale": "en",
   "content": {
-    "answer": "Absolutely! What better gift is there than the gift of tacos? Also for a limited time, we are offering a $5 Bonus Card to all Gift Card Purchases!",
-    "c_activeOnSearch": true,
+    "answerV2": {
+      "json": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Absolutely! What better gift is there than the gift of tacos? Also for a limited time, we are offering a $5 Bonus Card to all Gift Card Purchases!",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      }
+    },
     "c_primaryCTA": {
       "label": "Buy Now",
       "link": "http://www.turtleheadtacos.com/giftcard",
@@ -14,7 +43,6 @@
       "gift card"
     ],
     "landingPageUrl": "http://www.turtleheadtacos.com/giftcard",
-    "name": "Do you sell gift cards?",
     "question": "Do you sell gift cards?"
   },
   "entityType": "faq",

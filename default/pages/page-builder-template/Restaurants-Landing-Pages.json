@@ -1,8 +1,8 @@
 {
-  "$id": "Restaurants-Landing-Pages",
+  "$id": "Turtlehead-Tacos-Restaurant-Pages",
   "$schema": "https://schema.yext.com/config/pages/page-builder-template/v1",
   "PageSetType": "TEMPLATE",
-  "Name": "Restaurants Landing Pages",
+  "Name": "Turtlehead Tacos Restaurant Pages",
   "EntityTypeName": "restaurant",
   "PageSetConfig": {
     "Analytics": {
@@ -60,7 +60,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link3Text",
-              "StringValue": "Events"
+              "StringValue": "Community Stories"
             },
             {
               "ExternalEntityId": "",
@@ -72,7 +72,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link4Text",
-              "StringValue": "FAQs"
+              "StringValue": "Events"
             },
             {
               "ExternalEntityId": "",
@@ -84,7 +84,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link5Text",
-              "StringValue": "The Fun Zone"
+              "StringValue": "FAQs"
             },
             {
               "ExternalEntityId": "",
@@ -96,13 +96,50 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link6Text",
-              "StringValue": ""
+              "StringValue": "The Turtleheads Fun Zone"
             },
             {
               "ExternalEntityId": "",
-              "InputType": "CONSTANT",
+              "InputType": "",
               "Sink": "link6Url",
-              "StringValue": ""
+              "StringValue": "#"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "",
+              "Sink": "answersExperience",
+              "SubparameterContentMapEntries": [
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "configurationLabel",
+                  "StringValue": "PRODUCTION"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "searchResultsPageUrl",
+                  "StringValue": " "
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "sdkVersion",
+                  "StringValue": "1"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "placeholderText",
+                  "StringValue": "Search..."
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "autocompletePromptHeading",
+                  "StringValue": "You can ask your brand:"
+                }
+              ]
             }
           ],
           "DefaultScss": ".module-navbar {\n  padding: 0;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  width: 100%;\n\n  @include media-breakpoint-up(md) {\n    width: auto;\n  }\n}\n\n.logo-image {\n  object-fit: contain;\n  height: 100%;\n  max-height: 26px;\n\n  @include media-breakpoint-up(md) {\n    max-height: 45px;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: 44px;\n  }\n}\n\n.navbar {\n  background-color: $gray-100;\n  @extend .navbar-light;\n\n  @include media-breakpoint-up(md) {\n    height: 70px;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  \u0026-brand {\n    padding: 0;\n  }\n\n  \u0026-nav {\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: 1rem;\n    width: 100%;\n\n    @include media-breakpoint-up(md) {\n      align-items: center;\n      padding-top: 0;\n    }\n  }\n\n  \u0026-toggler {\n    border: 0;\n    padding: 0;\n    margin-left: auto;\n  }\n}\n\n.links-div {\n  display: flex;\n  flex-direction: column;\n  order: 2;\n  padding-left: 0;\n  padding-right: 0;\n\n  @include media-breakpoint-up(md) {\n    flex-direction: row;\n    order: 0;\n\n    .nav-item:first-child() {\n      padding-left: 0;\n    }\n\n    .nav-item {\n      align-self: center;\n    }\n  }\n}\n\n.answers-div {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: .5rem;\n  margin-left: auto;\n\n  @include media-breakpoint-up(md) {\n    padding-bottom: 0;\n  }\n}\n\n.yxt-SearchBar-form {\n  height: 44px;\n}\n\n.yxt-SearchBar {\n  height: 44px;\n\n  \u0026-input {\n    padding-right: var(--yxt-base-spacing)/2;\n  }\n}\n",
@@ -504,6 +541,47 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "headline",
+              "StringValue": "Community Stories"
+            },
+            {
+              "ExternalEntityId": "CS-1",
+              "InputType": "",
+              "SelectedField": [
+                "description"
+              ],
+              "Sink": "paragraph"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "buttonText",
+              "StringValue": "Learn More"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "buttonUrl",
+              "StringValue": "turtleheadtacos.com/community-stories/save-the-turtles"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "backgroundColor",
+              "StringValue": "#d5d5d5"
+            }
+          ],
+          "DefaultScss": "h2 {\n    text-align: center;\n}\n\n.paragraph {\n  margin-bottom: 1rem;\n}\n",
+          "Js": "",
+          "ListParamEntries": [],
+          "ModuleId": "9uQY23xAxS",
+          "Scss": "h2 {\n    text-align: center;\n}\n\n.paragraph {\n  margin-bottom: 1rem;\n}\n"
+        },
+        {
+          "ContentMapEntries": [
+            {
+              "ExternalEntityId": "",
+              "InputType": "CONSTANT",
+              "Sink": "headline",
               "StringValue": "Frequently Asked Questions"
             },
             {
@@ -515,10 +593,10 @@
               "Sink": "questionText"
             },
             {
-              "ExternalEntityId": "faq-1",
+              "ExternalEntityId": "",
               "InputType": "",
               "SelectedField": [
-                "answer"
+                "answerV2"
               ],
               "Sink": "answerText"
             },
@@ -637,7 +715,7 @@
                   "ExternalEntityId": "",
                   "InputType": "CONSTANT",
                   "Sink": "infoLinkText",
-                  "StringValue": "Visit Us Today"
+                  "StringValue": "Visit Turtlehead Today"
                 },
                 {
                   "ExternalEntityId": "",
@@ -800,61 +878,67 @@
         "DisplayNameOverride": "",
         "Id": "9JSAY3MA4S",
         "Module": "nav_bar",
-        "Version": 45
+        "Version": 48
       },
       {
         "DisplayNameOverride": "",
         "Id": "u994VCIuHU",
         "Module": "announcement_bar_2",
-        "Version": 23
+        "Version": 26
       },
       {
         "DisplayNameOverride": "",
         "Id": "JHE2lN0AxE",
         "Module": "centered_hero",
-        "Version": 26
+        "Version": 29
       },
       {
         "DisplayNameOverride": "",
         "Id": "u9E-BeM20E",
         "Module": "location_details_with_map_2",
-        "Version": 48
+        "Version": 51
       },
       {
         "DisplayNameOverride": "",
         "Id": "uutq8gIJJv",
         "Module": "item_list_i",
-        "Version": 28
+        "Version": 31
       },
       {
         "DisplayNameOverride": "",
         "Id": "uHY-W0n9Hv",
         "Module": "individual_faq",
-        "Version": 26
+        "Version": 29
+      },
+      {
+        "DisplayNameOverride": "",
+        "Id": "9uQY23xAxS",
+        "Module": "text_block",
+        "Version": 29
       },
       {
         "DisplayNameOverride": "",
         "Id": "HHV2lNM2ME",
         "Module": "nearby_locations",
-        "Version": 42
+        "Version": 45
       },
       {
         "DisplayNameOverride": "",
         "Id": "HJFnqrVuu_",
         "Module": "divider",
-        "Version": 21
+        "Version": 24
       },
       {
         "DisplayNameOverride": "OpenTable Widget",
         "Id": "HJCEAwEu9v",
         "Module": "html",
-        "Version": 17
+        "Version": 20
       },
       {
         "DisplayNameOverride": "",
         "Id": "HuVkYe02xE",
         "Module": "footer",
-        "Version": 29
+        "Version": 32
       }
     ],
     "Path": "",

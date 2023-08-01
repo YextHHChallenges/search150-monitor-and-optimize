@@ -3,8 +3,37 @@
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "primaryLocale": "en",
   "content": {
-    "answer": "We deliver! Visit our Order Now page (link below) to place an order.",
-    "c_activeOnSearch": true,
+    "answerV2": {
+      "json": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "We deliver! Visit our Order Now page (link below) to place an order.",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      }
+    },
     "c_primaryCTA": {
       "label": "Search for Nearby Restaurants",
       "link": "http://answers.turtleheadtacos.com",
@@ -13,7 +42,6 @@
     "keywords": [
       "delivery"
     ],
-    "name": "Do you offer delivery?",
     "question": "Do you offer delivery?"
   },
   "entityType": "faq",

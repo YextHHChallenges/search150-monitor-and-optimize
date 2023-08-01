@@ -1,8 +1,20 @@
 {
   "$id": "Jobs-Landing-Pages",
   "$schema": "https://schema.yext.com/config/pages/page-builder-template/v1",
+  "PageSetType": "TEMPLATE",
+  "Name": "Jobs Landing Pages",
   "EntityTypeName": "job",
   "PageSetConfig": {
+    "Analytics": {
+      "Cookies": {
+        "Script": "",
+        "Status": "ALWAYS_OFF"
+      },
+      "Pixel": {
+        "Script": "",
+        "Status": "ALWAYS_ON"
+      }
+    },
     "ContentMapping": {
       "ModuleMappings": [
         {
@@ -48,7 +60,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link3Text",
-              "StringValue": "Events"
+              "StringValue": "Community Stories"
             },
             {
               "ExternalEntityId": "",
@@ -60,7 +72,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link4Text",
-              "StringValue": "FAQs"
+              "StringValue": "Events"
             },
             {
               "ExternalEntityId": "",
@@ -72,7 +84,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link5Text",
-              "StringValue": "The Fun Zone"
+              "StringValue": "FAQs"
             },
             {
               "ExternalEntityId": "",
@@ -84,20 +96,57 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "link6Text",
-              "StringValue": ""
+              "StringValue": "The Turtlehead Fun Zone"
             },
             {
               "ExternalEntityId": "",
-              "InputType": "CONSTANT",
+              "InputType": "",
               "Sink": "link6Url",
-              "StringValue": ""
+              "StringValue": "#"
+            },
+            {
+              "ExternalEntityId": "",
+              "InputType": "",
+              "Sink": "answersExperience",
+              "SubparameterContentMapEntries": [
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "configurationLabel",
+                  "StringValue": "PRODUCTION"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "searchResultsPageUrl",
+                  "StringValue": " "
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "sdkVersion",
+                  "StringValue": "1"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "placeholderText",
+                  "StringValue": "Search..."
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "Sink": "autocompletePromptHeading",
+                  "StringValue": "You can ask your brand:"
+                }
+              ]
             }
           ],
-          "DefaultScss": ".module-navbar {\n\tpadding: 0;\n}\n\n.module-navbar-bg-color {\n  background-color: #f8f9fa;\n}\n\n.module-navbar .navbar-brand img {\n\theight: 50px; //height of the logo\n}\n\n.nav-link {\n    margin: 0 15px;\n}\n",
+          "DefaultScss": ".module-navbar {\n  padding: 0;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  width: 100%;\n\n  @include media-breakpoint-up(md) {\n    width: auto;\n  }\n}\n\n.logo-image {\n  object-fit: contain;\n  height: 100%;\n  max-height: 26px;\n\n  @include media-breakpoint-up(md) {\n    max-height: 45px;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: 44px;\n  }\n}\n\n.navbar {\n  background-color: $gray-100;\n  @extend .navbar-light;\n\n  @include media-breakpoint-up(md) {\n    height: 70px;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  \u0026-brand {\n    padding: 0;\n  }\n\n  \u0026-nav {\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: 1rem;\n    width: 100%;\n\n    @include media-breakpoint-up(md) {\n      align-items: center;\n      padding-top: 0;\n    }\n  }\n\n  \u0026-toggler {\n    border: 0;\n    padding: 0;\n    margin-left: auto;\n  }\n}\n\n.links-div {\n  display: flex;\n  flex-direction: column;\n  order: 2;\n  padding-left: 0;\n  padding-right: 0;\n\n  @include media-breakpoint-up(md) {\n    flex-direction: row;\n    order: 0;\n\n    .nav-item:first-child() {\n      padding-left: 0;\n    }\n\n    .nav-item {\n      align-self: center;\n    }\n  }\n}\n\n.answers-div {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: .5rem;\n  margin-left: auto;\n\n  @include media-breakpoint-up(md) {\n    padding-bottom: 0;\n  }\n}\n\n.yxt-SearchBar-form {\n  height: 44px;\n}\n\n.yxt-SearchBar {\n  height: 44px;\n\n  \u0026-input {\n    padding-right: var(--yxt-base-spacing)/2;\n  }\n}\n",
           "Js": "",
           "ListParamEntries": [],
           "ModuleId": "HJH_0t9l9v",
-          "Scss": ".module-navbar {\n\tpadding: 0;\n}\n\n.module-navbar-bg-color {\n  background-color: #f8f9fa;\n}\n\n.module-navbar .navbar-brand img {\n\theight: 50px; //height of the logo\n}\n\n.nav-link {\n    margin: 0 15px;\n}\n"
+          "Scss": ".module-navbar {\n  padding: 0;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  width: 100%;\n\n  @include media-breakpoint-up(md) {\n    width: auto;\n  }\n}\n\n.logo-image {\n  object-fit: contain;\n  height: 100%;\n  max-height: 26px;\n\n  @include media-breakpoint-up(md) {\n    max-height: 45px;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: 44px;\n  }\n}\n\n.navbar {\n  background-color: $gray-100;\n  @extend .navbar-light;\n\n  @include media-breakpoint-up(md) {\n    height: 70px;\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  \u0026-brand {\n    padding: 0;\n  }\n\n  \u0026-nav {\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: 1rem;\n    width: 100%;\n\n    @include media-breakpoint-up(md) {\n      align-items: center;\n      padding-top: 0;\n    }\n  }\n\n  \u0026-toggler {\n    border: 0;\n    padding: 0;\n    margin-left: auto;\n  }\n}\n\n.links-div {\n  display: flex;\n  flex-direction: column;\n  order: 2;\n  padding-left: 0;\n  padding-right: 0;\n\n  @include media-breakpoint-up(md) {\n    flex-direction: row;\n    order: 0;\n\n    .nav-item:first-child() {\n      padding-left: 0;\n    }\n\n    .nav-item {\n      align-self: center;\n    }\n  }\n}\n\n.answers-div {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: .5rem;\n  margin-left: auto;\n\n  @include media-breakpoint-up(md) {\n    padding-bottom: 0;\n  }\n}\n\n.yxt-SearchBar-form {\n  height: 44px;\n}\n\n.yxt-SearchBar {\n  height: 44px;\n\n  \u0026-input {\n    padding-right: var(--yxt-base-spacing)/2;\n  }\n}\n"
         },
         {
           "ContentMapEntries": [
@@ -179,7 +228,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "buttonText",
-              "StringValue": "Join Us"
+              "StringValue": "Join the Turtleheads"
             },
             {
               "ExternalEntityId": "",
@@ -276,11 +325,19 @@
               "StringValue": "Frequently Asked Questions"
             }
           ],
-          "DefaultScss": "$mobile-breakpoint: 768px;\n$lg-breakpoint: 992px;\n$xl-breakpoint: 1200px;\n$spacer: 16px;\n\n.headline {\n    font-size: 2em;\n    margin: 0px;\n    padding-bottom: $spacer;\n}\n\n.item-col {\n    margin-bottom: ($spacer * 2);\n}\n\n.item {\n    height: 100%;\n    position: relative;\n    background-color: #f2f2f2;\n    text-align: left;\n    display: flex;\n    flex-direction: column;\n\n    .image {\n        object-fit: contain;\n        max-width: 100%;\n        width: 100%;\n\n      \u0026-container {\n        flex-shrink: 0;\n      }\n    }\n\n    .title {\n        font-size: 1.5em;\n        font-weight: normal;\n        margin: 0px;\n        padding: $spacer $spacer 0px;\n        word-break: break-word;\n    }\n\n    .subtitle {\n        font-size: 1.25em;\n        font-weight: normal;\n        margin: 0px;\n        padding: $spacer $spacer 0px;\n    }\n\n    .description {\n        margin: 0px;\n        padding: $spacer $spacer 0px;\n        font-size: 1em;\n        --description-length: 300;\n    }\n\n    .cta-container {\n        display: flex;\n        align-items: flex-end;\n        height: 100%;\n\n        .cta {\n            font-size: 1em;\n            color: #0041ff;\n            text-decoration: none;\n            padding: $spacer;\n        }\n    }\n}\n\n@media (max-width: $mobile-breakpoint) {\n    .headline {\n        text-align: center;\n    }\n\n    .item-col {\n        text-align: center;\n    }\n}\n",
+          "DefaultScss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 15px;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: center;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n  word-break: break-word;\n}\n\n.item {\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.content-container {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-bottom: $spacer;\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    flex: 1;\n  }\n}\n",
           "Js": "",
           "ListParamEntries": [
             {
               "ContentMapEntries": [
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "logo"
+                  ],
+                  "Sink": "image"
+                },
                 {
                   "ExternalEntityId": "",
                   "InputType": "",
@@ -301,17 +358,41 @@
                   "ExternalEntityId": "",
                   "InputType": "",
                   "SelectedField": [
-                    "logo"
+                    "none"
                   ],
-                  "Sink": "image"
+                  "Sink": "address"
                 },
                 {
                   "ExternalEntityId": "",
                   "InputType": "",
                   "SelectedField": [
-                    "answer"
+                    "none"
+                  ],
+                  "Sink": "phone"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "email"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "answerV2"
                   ],
                   "Sink": "description"
+                },
+                {
+                  "ExternalEntityId": "",
+                  "InputType": "",
+                  "SelectedField": [
+                    "none"
+                  ],
+                  "Sink": "textList"
                 },
                 {
                   "ExternalEntityId": "",
@@ -489,7 +570,7 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "headline",
-              "StringValue": "Benefits of Working With Us"
+              "StringValue": "Benefits of Working at Turtlehead Tacos"
             },
             {
               "ExternalEntityId": "",
@@ -528,11 +609,11 @@
               "StringValue": "#"
             }
           ],
-          "DefaultScss": "$mobile-breakpoint: 767px;\n\nul {\n  margin-left: -20px;\n}\n\nli:not(:first-child) {\n  margin-top: 1rem;\n}\n\n.module-container {\n  padding: 2rem;\n}\n\n.headline {\n  font-weight: 500;\n  text-align: center;\n}\n\n.paragraph {\n  font-size: 16px;\n  text-align: center;\n\n  \u0026-row {\n    margin-top: 2rem;\n  }\n}\n\n.body {\n  \u0026-row {\n    margin-top: 2rem;\n  }\n\n  \u0026-section {\n    justify-content: center;\n  }\n}\n\n.image {\n  object-fit: contain;\n  width: 100%;\n  max-width: 100%;\n\n  @media (max-width: $mobile-breakpoint) {\n    margin-bottom: 1rem;\n  }\n}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.btn {\n  margin-top: 2rem;\n\n  @media (max-width: $mobile-breakpoint) {\n    \u0026-container {\n      display: flex;\n      justify-content: center;\n    }\n  }\n\n  \u0026-no-image-container {\n    display: flex;\n    justify-content: center;\n  }\n}\n",
+          "DefaultScss": "ul {\n  margin-left: -20px;\n  margin-block-end: 0;\n}\n\nli:not(:first-child) {\n  margin-top: 1rem;\n}\n\n.module-container {\n  padding: 2rem;\n\n  @include media-breakpoint-down(sm) {\n    padding: 1rem;\n  }\n}\n\n.headline {\n  font-weight: 500;\n  text-align: center;\n  margin-bottom: 0;\n}\n\n.paragraph {\n  font-size: 16px;\n  text-align: center;\n\n  \u0026-row {\n    margin-top: 2rem;\n\n    @include media-breakpoint-down(sm) {\n      margin-top: 1rem;\n    }\n  }\n}\n\n.body {\n  \u0026-row {\n    margin-top: 2rem;\n\n    @include media-breakpoint-down(sm) {\n      margin-top: 1rem;\n    }\n  }\n\n  \u0026-section {\n    justify-content: center;\n  }\n}\n\n.image {\n  object-fit: contain;\n  width: 100%;\n  max-width: 100%;\n\n  @include media-breakpoint-down(sm) {\n    margin-bottom: 1rem;\n  }\n}\n\n.list-item {\n  overflow-wrap: break-word;\n  margin-left: -5px;\n}\n\n.btn {\n  margin-top: 2rem;\n\n  @include media-breakpoint-down(sm) {\n    margin-top: 1rem;\n\n    \u0026-container {\n      display: flex;\n      justify-content: center;\n    }\n  }\n\n  \u0026-no-image-container {\n    display: flex;\n    justify-content: center;\n  }\n}\n",
           "Js": "",
           "ListParamEntries": [],
           "ModuleId": "JHitG89y9v",
-          "Scss": "$mobile-breakpoint: 767px;\n\nul {\n  margin-left: -20px;\n}\n\nli:not(:first-child) {\n  margin-top: 1rem;\n}\n\n.module-container {\n  padding: 2rem;\n}\n\n.headline {\n  font-weight: 500;\n  text-align: center;\n}\n\n.paragraph {\n  font-size: 16px;\n  text-align: center;\n\n  \u0026-row {\n    margin-top: 2rem;\n  }\n}\n\n.body {\n  \u0026-row {\n    margin-top: 2rem;\n  }\n\n  \u0026-section {\n    justify-content: center;\n  }\n}\n\n.image {\n  object-fit: contain;\n  width: 100%;\n  max-width: 100%;\n\n  @media (max-width: $mobile-breakpoint) {\n    margin-bottom: 1rem;\n  }\n}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.btn {\n  margin-top: 2rem;\n\n  @media (max-width: $mobile-breakpoint) {\n    \u0026-container {\n      display: flex;\n      justify-content: center;\n    }\n  }\n\n  \u0026-no-image-container {\n    display: flex;\n    justify-content: center;\n  }\n}\n"
+          "Scss": "ul {\n  margin-left: -20px;\n  margin-block-end: 0;\n}\n\nli:not(:first-child) {\n  margin-top: 1rem;\n}\n\n.module-container {\n  padding: 2rem;\n\n  @include media-breakpoint-down(sm) {\n    padding: 1rem;\n  }\n}\n\n.headline {\n  font-weight: 500;\n  text-align: center;\n  margin-bottom: 0;\n}\n\n.paragraph {\n  font-size: 16px;\n  text-align: center;\n\n  \u0026-row {\n    margin-top: 2rem;\n\n    @include media-breakpoint-down(sm) {\n      margin-top: 1rem;\n    }\n  }\n}\n\n.body {\n  \u0026-row {\n    margin-top: 2rem;\n\n    @include media-breakpoint-down(sm) {\n      margin-top: 1rem;\n    }\n  }\n\n  \u0026-section {\n    justify-content: center;\n  }\n}\n\n.image {\n  object-fit: contain;\n  width: 100%;\n  max-width: 100%;\n\n  @include media-breakpoint-down(sm) {\n    margin-bottom: 1rem;\n  }\n}\n\n.list-item {\n  overflow-wrap: break-word;\n  margin-left: -5px;\n}\n\n.btn {\n  margin-top: 2rem;\n\n  @include media-breakpoint-down(sm) {\n    margin-top: 1rem;\n\n    \u0026-container {\n      display: flex;\n      justify-content: center;\n    }\n  }\n\n  \u0026-no-image-container {\n    display: flex;\n    justify-content: center;\n  }\n}\n"
         },
         {
           "ContentMapEntries": [
@@ -560,13 +641,13 @@
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "headline",
-              "StringValue": "About Us"
+              "StringValue": "About Turtlehead Tacos"
             },
             {
               "ExternalEntityId": "",
               "InputType": "CONSTANT",
               "Sink": "paragraph",
-              "StringValue": "Founded in 2005 by Marty Morris in Austin, TX, we strive to be your go-to destination for all things tacos!  We are more than just a restaurant, we\u0027re a destination. We are committed to providing our customers with family (and pet!) friendly services, fresh food, and just general good vibes. \n\nWe\u0027re also expanding quickly! We have over 50 locations with plans to open many more. We are hiring for all departments, including our restaurant team and corporate functions like Marketing, Legal, Finance, Operations and more. \n\nJoin our team to be part of a fast-paced, lively, caring culture striving to become the Taco Destination of America. "
+              "StringValue": "Founded in 2005 by Marty Morris in Austin, TX, Turtlehead Tacos strives to be your go-to destination for all things Tacos!  We are more than just a restaurant, we\u0027re a destination. We are committed to providing our customers with family (and pet!) friendly services, fresh food, and just general good vibes. \n\nWe\u0027re also expanding quickly! We have over 50 locations with plans to open many more. We are hiring for all departments, including our restaurant team and corporate functions like Marketing, Legal, Finance, Operations and more. \n\nJoin our team to be part of a fast-paced, lively, caring culture striving to become the Taco Destination of America. "
             },
             {
               "ExternalEntityId": "",
@@ -583,11 +664,11 @@
               "StringValue": "#"
             }
           ],
-          "DefaultScss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n        .headline {\n            text-align: center;\n        }\n\n        img.image {\n            display: block;\n        }\n\n        .cta-container {\n            text-align: center;\n        }\n    }\n\n }\n\n",
+          "DefaultScss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n      flex: auto;\n      max-width: 100%;\n\n      .headline {\n          text-align: center;\n      }\n\n      img.image {\n          display: block;\n      }\n\n      .cta-container {\n          text-align: center;\n      }\n    }\n\n }\n\n",
           "Js": "",
           "ListParamEntries": [],
           "ModuleId": "uHuNNFuyJR",
-          "Scss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n        .headline {\n            text-align: center;\n        }\n\n        img.image {\n            display: block;\n        }\n\n        .cta-container {\n            text-align: center;\n        }\n    }\n\n }\n\n"
+          "Scss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n      flex: auto;\n      max-width: 100%;\n\n      .headline {\n          text-align: center;\n      }\n\n      img.image {\n          display: block;\n      }\n\n      .cta-container {\n          text-align: center;\n      }\n    }\n\n }\n\n"
         }
       ],
       "ThemeMapping": {
@@ -612,17 +693,11 @@
             "ExternalEntityId": "",
             "InputType": "",
             "Sink": "metaKeywords"
-          },
-          {
-            "ExternalEntityId": "",
-            "InputType": "",
-            "Sink": "conversionTracking",
-            "StringValue": ""
           }
         ],
-        "DefaultScss": "$web-font-path: \"https://fonts.googleapis.com/css?family\u003dSource+Sans+Pro:300,400,700\" !default;\r\n@import url($web-font-path);\r\n\r\n\r\n$white:    #fff !default;\r\n$gray-100: #f8f9fa !default;\r\n$gray-200: #e9ecef !default;\r\n$gray-300: #dee2e6 !default;\r\n$gray-400: #ced4da !default;\r\n$gray-500: #adb5bd !default;\r\n$gray-600: #868e96 !default;\r\n$gray-700: #495057 !default;\r\n$gray-800: #373a3c !default;\r\n$gray-900: #212529 !default;\r\n$black:    #000 !default;\r\n\r\n$blue:    #2780E3 !default;\r\n$indigo:  #6610f2 !default;\r\n$purple:  #613d7c !default;\r\n$pink:    #e83e8c !default;\r\n$red:     #FF0039 !default;\r\n$orange:  #f0ad4e !default;\r\n$yellow:  #FF7518 !default;\r\n$green:   #3FB618 !default;\r\n$teal:    #20c997 !default;\r\n$cyan:    #9954BB !default;\r\n\r\n$primary:       $blue !default;\r\n$secondary:     $gray-800 !default;\r\n$success:       $green !default;\r\n$info:          $cyan !default;\r\n$warning:       $yellow !default;\r\n$danger:        $red !default;\r\n$light:         $gray-100 !default;\r\n$dark:          $gray-800 !default;\r\n\r\n// Options\r\n\r\n$enable-rounded: false !default;\r\n\r\n// Body\r\n\r\n$body-color:    $gray-800 !default;\r\n\r\n// Fonts\r\n\r\n$font-family-sans-serif: \"Segoe UI\", \"Source Sans Pro\", Calibri, Candara, Arial, sans-serif !default;\r\n\r\n$font-size-base: 0.9375rem !default;\r\n\r\n$headings-font-weight:   300 !default;\r\n\r\n// Navbar\r\n\r\n$navbar-dark-hover-color:           rgba($white,1) !default;\r\n\r\n$navbar-light-hover-color:          rgba($black,.9) !default;\r\n\r\n// Alerts\r\n\r\n$alert-border-width:                0 !default;\r\n\r\n// Progress bars\r\n\r\n$progress-height:               0.5rem !default;\r\n\r\n@import \"bootstrap\";\r\n\r\n\r\nbody {\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\n",
+        "DefaultScss": "$web-font-path: \"https://assets.sitescdn.net/landingpages/shared-assets/fonts/Source+Sans+Pro/fonts.css\" !default;\r\n@import url($web-font-path);\r\n\r\n\r\n$white:    #fff !default;\r\n$gray-100: #f8f9fa !default;\r\n$gray-200: #e9ecef !default;\r\n$gray-300: #dee2e6 !default;\r\n$gray-400: #ced4da !default;\r\n$gray-500: #adb5bd !default;\r\n$gray-600: #868e96 !default;\r\n$gray-700: #495057 !default;\r\n$gray-800: #373a3c !default;\r\n$gray-900: #212529 !default;\r\n$black:    #000 !default;\r\n\r\n$blue:    #2780E3 !default;\r\n$indigo:  #6610f2 !default;\r\n$purple:  #613d7c !default;\r\n$pink:    #e83e8c !default;\r\n$red:     #FF0039 !default;\r\n$orange:  #f0ad4e !default;\r\n$yellow:  #FF7518 !default;\r\n$green:   #3FB618 !default;\r\n$teal:    #20c997 !default;\r\n$cyan:    #9954BB !default;\r\n\r\n$primary:       $blue !default;\r\n$secondary:     $gray-800 !default;\r\n$success:       $green !default;\r\n$info:          $cyan !default;\r\n$warning:       $yellow !default;\r\n$danger:        $red !default;\r\n$light:         $gray-100 !default;\r\n$dark:          $gray-800 !default;\r\n\r\n// Options\r\n\r\n$enable-rounded: false !default;\r\n\r\n// Body\r\n\r\n$body-color:    $gray-800 !default;\r\n\r\n// Fonts\r\n\r\n$font-family-sans-serif: \"Segoe UI\", \"Source Sans Pro\", Calibri, Candara, Arial, sans-serif !default;\r\n\r\n$font-size-base: 0.9375rem !default;\r\n\r\n$headings-font-weight:   300 !default;\r\n\r\n// Navbar\r\n\r\n$navbar-dark-hover-color:           rgba($white,1) !default;\r\n\r\n$navbar-light-hover-color:          rgba($black,.9) !default;\r\n\r\n// Alerts\r\n\r\n$alert-border-width:                0 !default;\r\n\r\n// Progress bars\r\n\r\n$progress-height:               0.5rem !default;\r\n\r\n@import \"bootstrap\";\r\n\r\n\r\nbody {\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\n",
         "Js": "",
-        "Scss": "$web-font-path: \"https://fonts.googleapis.com/css?family\u003dSource+Sans+Pro:300,400,700\" !default;\r\n@import url($web-font-path);\r\n\r\n\r\n$white:    #fff !default;\r\n$gray-100: #f8f9fa !default;\r\n$gray-200: #e9ecef !default;\r\n$gray-300: #dee2e6 !default;\r\n$gray-400: #ced4da !default;\r\n$gray-500: #adb5bd !default;\r\n$gray-600: #868e96 !default;\r\n$gray-700: #495057 !default;\r\n$gray-800: #373a3c !default;\r\n$gray-900: #212529 !default;\r\n$black:    #000 !default;\r\n\r\n$blue:    #2780E3 !default;\r\n$indigo:  #6610f2 !default;\r\n$purple:  #613d7c !default;\r\n$pink:    #e83e8c !default;\r\n$red:     #FF0039 !default;\r\n$orange:  #f0ad4e !default;\r\n$yellow:  #FF7518 !default;\r\n$green:   #3FB618 !default;\r\n$teal:    #20c997 !default;\r\n$cyan:    #9954BB !default;\r\n\r\n$primary:       $blue !default;\r\n$secondary:     $gray-800 !default;\r\n$success:       $green !default;\r\n$info:          $cyan !default;\r\n$warning:       $yellow !default;\r\n$danger:        $red !default;\r\n$light:         $gray-100 !default;\r\n$dark:          $gray-800 !default;\r\n\r\n// Options\r\n\r\n$enable-rounded: false !default;\r\n\r\n// Body\r\n\r\n$body-color:    $gray-800 !default;\r\n\r\n// Fonts\r\n\r\n$font-family-sans-serif: \"Segoe UI\", \"Source Sans Pro\", Calibri, Candara, Arial, sans-serif !default;\r\n\r\n$font-size-base: 0.9375rem !default;\r\n\r\n$headings-font-weight:   300 !default;\r\n\r\n// Navbar\r\n\r\n$navbar-dark-hover-color:           rgba($white,1) !default;\r\n\r\n$navbar-light-hover-color:          rgba($black,.9) !default;\r\n\r\n// Alerts\r\n\r\n$alert-border-width:                0 !default;\r\n\r\n// Progress bars\r\n\r\n$progress-height:               0.5rem !default;\r\n\r\n@import \"bootstrap\";\r\n\r\n\r\nbody {\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\n"
+        "Scss": "$web-font-path: \"https://assets.sitescdn.net/landingpages/shared-assets/fonts/Source+Sans+Pro/fonts.css\" !default;\r\n@import url($web-font-path);\r\n\r\n\r\n$white:    #fff !default;\r\n$gray-100: #f8f9fa !default;\r\n$gray-200: #e9ecef !default;\r\n$gray-300: #dee2e6 !default;\r\n$gray-400: #ced4da !default;\r\n$gray-500: #adb5bd !default;\r\n$gray-600: #868e96 !default;\r\n$gray-700: #495057 !default;\r\n$gray-800: #373a3c !default;\r\n$gray-900: #212529 !default;\r\n$black:    #000 !default;\r\n\r\n$blue:    #2780E3 !default;\r\n$indigo:  #6610f2 !default;\r\n$purple:  #613d7c !default;\r\n$pink:    #e83e8c !default;\r\n$red:     #FF0039 !default;\r\n$orange:  #f0ad4e !default;\r\n$yellow:  #FF7518 !default;\r\n$green:   #3FB618 !default;\r\n$teal:    #20c997 !default;\r\n$cyan:    #9954BB !default;\r\n\r\n$primary:       $blue !default;\r\n$secondary:     $gray-800 !default;\r\n$success:       $green !default;\r\n$info:          $cyan !default;\r\n$warning:       $yellow !default;\r\n$danger:        $red !default;\r\n$light:         $gray-100 !default;\r\n$dark:          $gray-800 !default;\r\n\r\n// Options\r\n\r\n$enable-rounded: false !default;\r\n\r\n// Body\r\n\r\n$body-color:    $gray-800 !default;\r\n\r\n// Fonts\r\n\r\n$font-family-sans-serif: \"Segoe UI\", \"Source Sans Pro\", Calibri, Candara, Arial, sans-serif !default;\r\n\r\n$font-size-base: 0.9375rem !default;\r\n\r\n$headings-font-weight:   300 !default;\r\n\r\n// Navbar\r\n\r\n$navbar-dark-hover-color:           rgba($white,1) !default;\r\n\r\n$navbar-light-hover-color:          rgba($black,.9) !default;\r\n\r\n// Alerts\r\n\r\n$alert-border-width:                0 !default;\r\n\r\n// Progress bars\r\n\r\n$progress-height:               0.5rem !default;\r\n\r\n@import \"bootstrap\";\r\n\r\n\r\nbody {\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\n"
       }
     },
     "DesignParameterConfig": {
@@ -681,59 +756,55 @@
         "DisplayNameOverride": "",
         "Id": "HJH_0t9l9v",
         "Module": "nav_bar",
-        "Version": 22
+        "Version": 48
       },
       {
         "DisplayNameOverride": "",
         "Id": "u99U0wuYuR",
         "Module": "centered_hero",
-        "Version": 17
+        "Version": 29
       },
       {
         "DisplayNameOverride": "",
         "Id": "J9u_xt9l9_",
         "Module": "job_details",
-        "Version": 5
+        "Version": 18
       },
       {
         "DisplayNameOverride": "",
         "Id": "HuBdy7uBuR",
         "Module": "divider",
-        "Version": 12
+        "Version": 24
       },
       {
         "DisplayNameOverride": "",
         "Id": "JHitG89y9v",
         "Module": "item_list",
-        "Version": 19
+        "Version": 33
       },
       {
         "DisplayNameOverride": "",
         "Id": "uJHUxsuyu_",
         "Module": "item_list_i",
-        "Version": 12
+        "Version": 31
       },
       {
         "DisplayNameOverride": "",
         "Id": "uHuNNFuyJR",
         "Module": "about_this_page",
-        "Version": 27
+        "Version": 41
       },
       {
         "DisplayNameOverride": "",
         "Id": "JH9R4tHluv",
         "Module": "footer",
-        "Version": 18
+        "Version": 32
       }
     ],
     "Path": "",
     "Schema": "",
-    "SinglePageConfig": {
-      "Path": ""
-    },
+    "TemplateConfig": {},
     "Theme": "cosmo",
-    "ThemeVersion": 1
-  },
-  "PageSetType": "TEMPLATE",
-  "Name": "Jobs Landing Pages"
+    "ThemeVersion": 2
+  }
 }

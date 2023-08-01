@@ -3,8 +3,37 @@
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "primaryLocale": "en",
   "content": {
-    "answer": "We strive to make your application process as smooth as possible - whether that\u0027s at corporate or on one of the Restaurant Teams. It will start with a quick conversation with a Recruiting manager, followed by in-person interviews where possible, otherwise video interviews. We try to keep the process quick so it should take less than 3 weeks from start to finish.",
-    "c_activeOnSearch": true,
+    "answerV2": {
+      "json": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "We strive to make your application process as smooth as possible - whether that\u0027s at corporate or on one of the Restaurant Teams. It will start with a quick conversation with a Recruiting manager, followed by in-person interviews where possible, otherwise video interviews. We try to keep the process quick so it should take less than 3 weeks from start to finish.",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      }
+    },
     "c_primaryCTA": {
       "label": "Apply Now",
       "link": "http://careers.turtleheadtacos.com",
@@ -14,7 +43,6 @@
       "career",
       "jobs"
     ],
-    "name": "What is the application process like?",
     "question": "What is the application process like?"
   },
   "entityType": "faq",
