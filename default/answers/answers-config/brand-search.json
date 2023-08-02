@@ -40,7 +40,7 @@
           "type": "FIELD"
         }
       ],
-      "source": "KNOWLEDGE_MANAGER"
+      "source": "YEXT"
     },
     "faqs": {
       "entityTypes": [
@@ -60,7 +60,7 @@
         }
       },
       "sortBys": [],
-      "source": "KNOWLEDGE_MANAGER"
+      "source": "YEXT"
     },
     "restaurants": {
       "entityTypes": [
@@ -95,7 +95,7 @@
         }
       },
       "sortBys": [],
-      "source": "KNOWLEDGE_MANAGER"
+      "source": "YEXT"
     }
   },
   "synonyms": {
